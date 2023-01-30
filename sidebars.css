@@ -71,6 +71,10 @@ a {
   background-color: #111111 !important;
 }
 
+.container {
+  max-width: 700px;
+}
+
 .content {
   border: 2em;
 }

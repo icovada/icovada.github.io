@@ -77,12 +77,11 @@ main {
 
 .timeline {
   padding-bottom: 2em;
-  padding-left: 3em;
-
+  padding-left: 5em;
 }
 
 .timeline .block {
-  padding-left: 5em;
+  padding-left: 2em;
 }
 
 .timeline .block span {
@@ -91,4 +90,8 @@ main {
 
 .timeline .block .date {
   padding-bottom: 0.5em;
+}
+
+li {
+  padding-bottom: 1em;
 }

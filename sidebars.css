@@ -76,7 +76,9 @@ main {
 }
 
 .timeline {
-  padding: 2em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+
 }
 
 .timeline .block {

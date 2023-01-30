@@ -61,3 +61,7 @@ main {
 .contact-links{
   color: white;
 }
+
+.main-section {
+  background-color: #111111 !important;
+}

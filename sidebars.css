@@ -63,7 +63,7 @@ main {
   overflow-y: auto;
 }
 
-.contact-links {
+a {
   color: white;
 }
 

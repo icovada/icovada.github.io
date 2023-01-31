@@ -29,15 +29,16 @@ a {
 
 .timeline {
   padding-bottom: 2em;
-  padding-left: 5em;
+  padding-left: 10%;
 }
 
 .timeline .block {
-  padding-left: 2em;
+  padding-left: 5%;
+  padding-right: 10%;
 }
 
 .timeline .block span {
-  padding-left: 1em;
+  padding-left: 2%;
 }
 
 .timeline .block .date {

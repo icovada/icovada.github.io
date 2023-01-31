@@ -38,6 +38,7 @@ a {
 }
 
 .timeline .block span {
+  display: inline-block;
   padding-left: 2%;
 }
 

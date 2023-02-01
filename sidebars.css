@@ -11,8 +11,8 @@ main {
   height: 100vh;
   height: -webkit-fill-available;
   max-height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 .scrollarea {
@@ -25,6 +25,11 @@ a {
 
 .main-section {
   background-color: #191919 !important;
+  overflow-y: scroll;
+}
+
+.sidebar {
+  overflow-y: scroll;
 }
 
 .container {
@@ -43,11 +48,6 @@ a {
 .timeline .block {
   padding-left: 5%;
   padding-right: 10%;
-}
-
-.timeline .block span {
-  display: inline-block;
-  padding-left: 2%;
 }
 
 .timeline .block .date {

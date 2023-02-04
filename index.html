@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8">
@@ -20,11 +20,31 @@
   <link href="sidebars.css" rel="stylesheet">
 </head>
 
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My CV</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dev.html">Development portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
   <main class="d-md-flex">
     <h1 class="visually-hidden">Federico Tabbò Curriculum Vitae</h1>
 
-    <div class="col-12 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar" >
+    <div class="col-12 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column flex-shrink-0 p-3 sidebar">
       <img src="img/me.png" alt="A picture of me" class="border border-white border-4 rounded-circle my-4"></img>
       <h1 class="fs-2 text-center">Federico Tabbò</h1>
       <hr>
@@ -44,8 +64,7 @@
         <li>Started programming at age 8</li>
         <li>Linux user since 2006</li>
         <li>My Debian home server(s) has been on since 2010</li>
-        <li>Treats infra as <a
-            href="https://www.hava.io/blog/cattle-vs-pets-devops-explained">cattle</a></li>
+        <li>Treats infra as <a href="https://www.hava.io/blog/cattle-vs-pets-devops-explained">cattle</a></li>
         <li>Prefers to spend 8 hours automating something, than 10 minutes doing it</li>
         <li>Built a Python network automation library with hundreds of downloads from pypi</li>
         <li>Learning Kubernetes, already moved some production apps on it</li>
@@ -63,9 +82,9 @@
 
     </div>
 
-    <div class="col-12 col-md-8 col-xxl-5 d-flex p-2 p-md-5 flex-fill flex-column text-bg-dark main-section">
+    <div class="col-12 col-md-8 col-xxl-5 d-flex p-2 p-md-5 flex-fill flex-column main-section">
       <div class="container">
-        <div class="d-flex flex-column section text-bg-dark border border-light-subtle rounded my-2">
+        <div class="d-flex flex-column section border border-light-subtle rounded my-2">
           <h1 class="py-4 fs-2 text-center">Work</h1>
           <ul class="timeline">
             <li class="block">
@@ -81,35 +100,53 @@
               <p class="fst-italic">Network engineer on campus, DC and Service Provider technologies</p>
               <p>Main projects and customers:</p>
               <ul>
-                <li><a href="https://www.snam.it">SNAM</a>: DC migration from classical Nexus to Cisco ACI. Wrote <i class="text-info">Python</i> script to parse layer-2 Nexus configurations and re-create relevant port bindings on ACI</li>
-                <li><a href="https://www.gruppoveronesi.it/">Gruppo Veronesi</a>: Followed several LAN refurbishments and new site activations, taking part in defining policies for the entire network</li>
-                <li><a href="https://www.gruppoveronesi.it/">Gruppo Veronesi</a>: LAN Segmentation and config cleanup. In charge of a small team, we analyzed and fixed configurations of over 500 network devices to bring them up to policy. In total, 20000 ports were analysed and attached clients, still mostly in VLAN 1, were migrated to their correct VLAN to improve security through segmentation. Topology discovery and config parsing and changes were done through my library <a class="text-info fw-bold" href="https://github.com/icovada/netwalk">Netwalk</a> combined with <i class="text-info">NetBox</i> and a <i class="text-info">Jenkins pipeline</i></li>
-                <li><a href="https://www.esselunga.it">Esselunga</a>: Web middleware built on <i class="text-info">Django</i> with Bootstrap frontend to simplify day-by-day operations on Cisco ACI</li>
+                <li><a href="https://www.snam.it">SNAM</a>: DC migration from classical Nexus to Cisco ACI. Wrote <i
+                    class="text-info">Python</i> script to parse layer-2 Nexus configurations and re-create relevant
+                  port bindings on ACI</li>
+                <li><a href="https://www.gruppoveronesi.it/">Gruppo Veronesi</a>: Followed several LAN refurbishments
+                  and new site activations, taking part in defining policies for the entire network</li>
+                <li><a href="https://www.gruppoveronesi.it/">Gruppo Veronesi</a>: LAN Segmentation and config cleanup.
+                  In charge of a small team, we analyzed and fixed configurations of over 500 network devices to bring
+                  them up to policy. In total, 20000 ports were analysed and attached clients, still mostly in VLAN 1,
+                  were migrated to their correct VLAN to improve security through segmentation. Topology discovery and
+                  config parsing and changes were done through my library <a class="text-info fw-bold"
+                    href="https://github.com/icovada/netwalk">Netwalk</a> combined with <i class="text-info">NetBox</i>
+                  and a <i class="text-info">Jenkins pipeline</i></li>
+                <li><a href="https://www.esselunga.it">Esselunga</a>: Web middleware built on <i
+                    class="text-info">Django</i> with Bootstrap frontend to simplify day-by-day operations on Cisco ACI
+                </li>
               </ul>
-              <p>Side projects: <a href="/side-projects/metamonitor">Meta Monitor</a>, <a href="/side-projects/stageit">StageIT</a></p>
+              <p>Internal projects: <a href="/side-projects/metamonitor">Meta Monitor</a>, <a
+                  href="/side-projects/stageit">StageIT</a></p>
             </li>
 
             <li class="block">
               <div class="fw-bold">Network and Collaboration Engineer @ <a href="https://lutech.group">Lutech</a></div>
               <div class="date">2013-2018</div>
-              <p class="fst-italic">My first fole, starting as an intern and progressing to Engineer on Cisco network and collaboration technologies.</p>
+              <p class="fst-italic">My first fole, starting as an intern and progressing to Engineer on Cisco network
+                and collaboration technologies.</p>
               <p>Main projects and customers:</p>
               <ul>
-                <li><a href="https://www.fincantieri.it">Fincantieri</a>: LAN refurbishment for two shipyards. Took part as junior member of a team, changing switches on the field and investigating issues.</li>
-                <li><a href="https://www.mirogliogroup.com/">Miroglio</a>: Phone system migration from traditional POTS lines to <i class="text-info">Cisco Call Manager</i>. Through the years I've gone from following shop activations and migrations to taking charge of the migration of all of the offices and productive plants, making desing choices, becoming the reference point for the customer</li>
+                <li><a href="https://www.fincantieri.it">Fincantieri</a>: LAN refurbishment for two shipyards. Took part
+                  as junior member of a team, changing switches on the field and investigating issues.</li>
+                <li><a href="https://www.mirogliogroup.com/">Miroglio</a>: Phone system migration from traditional POTS
+                  lines to <i class="text-info">Cisco Call Manager</i>. Through the years I've gone from following shop
+                  activations and migrations to taking charge of the migration of all of the offices and productive
+                  plants, making desing choices, becoming the reference point for the customer</li>
               </ul>
             </li>
 
             <li class="block">
               <div class="fw-bold">Random stuff on my server @ Home</div>
               <div class="date">2010-2013</div>
-              <p>Stuff I've played with in no particular order: debian iptables php syslog apache2 squid cron ossec mysql phpmyadmin webmin postfix dovecot openvpn quagga samba lxc zfs netatalk avahi</p>
+              <p>Stuff I've played with in no particular order: debian iptables php syslog apache2 squid cron ossec
+                mysql phpmyadmin webmin postfix dovecot openvpn quagga samba lxc zfs netatalk avahi</p>
             </li>
           </ul>
 
         </div>
 
-        <div class="d-flex flex-column section text-bg-dark border border-light-subtle rounded my-2">
+        <div class="d-flex flex-column section border border-light-subtle rounded my-2">
           <h1 class="py-4 fs-2 text-center">Certifications</h1>
           <ul class="timeline">
             <li class="block">
@@ -145,7 +182,7 @@
           </ul>
         </div>
       </div>
-  </div>
+    </div>
   </main>
 
 

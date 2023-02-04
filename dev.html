@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
   <link href="sidebars.css" rel="stylesheet">
 </head>
 
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">My CV</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -33,14 +33,14 @@
           <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/dev.html">Development</a>
+          <a class="nav-link active" href="/dev.html">Development portfolio</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<body data-bs-theme="dark">
+<body>
   <main class="d-md-flex">
     <h1 class="visually-hidden">Federico Tabbò Curriculum Vitae</h1>
 
@@ -88,7 +88,8 @@
           <h1 class="py-4 fs-2 text-center">Netwalk</h1>
 
           <div class="block">
-            <p>Available on <a class="contact-links" href="https://github.com/icovada/netwalk"><i class="bi bi-github mx-0"></i>GitHub</a></p>
+            <p>Available on <a class="contact-links" href="https://github.com/icovada/netwalk"><i
+                  class="bi bi-github mx-0"></i>GitHub</a></p>
 
             <p>Python library based on Napalm to discover Cisco network fabrics through CDP and LLDP, parse current
               configurations and map host positions by calculating a distributed mac address table.</p>
@@ -103,45 +104,37 @@
 
             <p>Django application to receive and keep track of alerts from different monitoring systems @ NTT NOC</p>
             <p>I have taken over the applicazion following the original dev resignation.</p>
-            <p>I have since completely rewritten both frontend and backend with an eye to performance and user experience, optimising queries to speed up API respose times.</p>
+            <p>I have since completely rewritten both frontend and backend with an eye to performance and user
+              experience, optimising queries to speed up API respose times.</p>
             <ul>
               <li>Backend code was optimised and I've added support for proper RBAC with LDAP-mapped groups</li>
-              <li>Frontend was completely rewritten and now communicates through APIs and Websockets to propagate updates immedietely across clients and reduce DB load</li>
+              <li>Frontend was completely rewritten and now communicates through APIs and Websockets to propagate
+                updates immedietely across clients and reduce DB load</li>
               <li>Historical data is pushed to InfluxDB for analytics</li>
               <li>Grafana dashboard on a wall monitor for immediate visibility of alerting states</li>
               <li>Migrated from systemd service to docker and now to Kubernetes</li>
-              <li>Currently being split into microservicews</li>
+              <li>Currently being split into microservices</li>
             </ul>
           </div>
         </div>
 
         <div class="d-flex flex-column section border border-light-subtle rounded my-2">
-          <h1 class="py-4 fs-2 text-center text">fACIle<p class="fs-6 text-center text-muted">(<i>easy</i> in Italian)</p></h1>
-          
-
+          <h1 class="py-4 fs-2 text-center text">fACIle<p class="fs-6 text-center text-muted">(<i>easy</i> in Italian)
+            </p>
+          </h1>
           <div class="block">
-
-            <p>Django application to receive and keep track of alerts from different monitoring systems @ NTT NOC</p>
-            <p>I have taken over the applicazion following the original dev resignation.</p>
-            <p>I have since completely rewritten both frontend and backend with an eye to performance and user experience, optimising queries to speed up API respose times.</p>
-            <ul>
-              <li>Backend code was optimised and I've added support for proper RBAC with LDAP-mapped groups</li>
-              <li>Frontend was completely rewritten and now communicates through APIs and Websockets to propagate updates immedietely across clients and reduce DB load</li>
-              <li>Historical data is pushed to InfluxDB for analytics</li>
-              <li>Grafana dashboard on a wall monitor for immediate visibility of alerting states</li>
-              <li>Migrated from systemd service to docker and now to Kubernetes</li>
-              <li>Currently being split into microservicews</li>
-            </ul>
+            <p>Django middleware for Cisco ACI to manage EPG bindings as if it was a standard Catalys/Nexus switch</p>
+            <p>Reduced training for helpdesk techs to zero as the ACI fabric is managed like a classic Nexus</p>
           </div>
         </div>
 
         <div class="d-flex flex-column section border border-light-subtle rounded my-2">
           <h1 class="py-4 fs-2 text-center">Painless IBLE</h1>
-
           <div class="block">
-            <p>Available on <a class="contact-links" href="https://github.com/icovada/netwalk"><i class="bi bi-github mx-0"></i>GitHub</a></p>
-
-            <p>Reverse-engineered the savefile of a painfully bad application to program LED panels</p>
+            <p>Available on <a class="contact-links" href="https://github.com/icovada/netwalk"><i
+                  class="bi bi-github mx-0"></i>GitHub</a></p>
+            <p>Reverse-engineered the binary savefile format of a painfully bad application to program LED panels so I
+              didn't have to deal with it</p>
           </div>
         </div>
 

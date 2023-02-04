@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import ListSection from '../components/ListSection.vue'
+
+const techskills = ["Is a penguin", "can imagine big penguins"]
 </script>
+
 
 <template>
   <div class="col-12 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar">
@@ -16,14 +20,8 @@
     <a class="contact-links" href="https://blog.tabbo.it"><i class="bi bi-wordpress mx-2"></i>Blog</a>
     <a class="contact-links" href="mailto:cv@tabbo.it"><i class="bi bi-envelope-at mx-2"></i>cv@tabbo.it</a>
     <hr>
-    <h2 class="fs-4 my-2">Tech skills</h2>
-    <ul>
-      <li>Got my first PC at age 4</li>
-      <li>Started programming at age 8</li>
-      <li>Linux user since 2006</li>
-      <li>My Debian home server(s) has been on since 2010</li>
-      <li>Treats infra as <a href="https://www.hava.io/blog/cattle-vs-pets-devops-explained">cattle</a></li>
-    </ul>
+    <ListSection title="Tech skills" list={{ techskills }}>
+    </ListSection>
     <hr>
     <h2 class="fs-4 my-2">Hobbies</h2>
     <ul>

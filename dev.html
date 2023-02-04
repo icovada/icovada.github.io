@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>My CV</title>
+
+  <link rel="canonical" href="https://icovada.github.io">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+  <!-- Custom styles for this template -->
+  <link href="sidebars.css" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My CV</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/dev.html">Development</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body data-bs-theme="dark">
+  <main class="d-md-flex">
+    <h1 class="visually-hidden">Federico Tabbò Curriculum Vitae</h1>
+
+    <div class="col-12 col-md-4 col-xl-3 col-xxl-2 d-flex flex-column flex-shrink-0 p-3 sidebar">
+      <img src="img/me.png" alt="A picture of me" class="border border-white border-4 rounded-circle my-4"></img>
+      <h1 class="fs-2 text-center">Federico Tabbò</h1>
+      <hr>
+      <h2 class="fs-4 my-2">About me</h2>
+      <span class="ms-2">Network engineer looking to move into the DevOps space</span>
+      <hr>
+      <h2 class="fs-4 my-2">Contacts</h2>
+      <a class="contact-links" href="https://github.com/icovada/"><i class="bi bi-github mx-2"></i>GitHub</a>
+      <a class="contact-links" href="https://www.linkedin.com/in/federico-tabb%C3%B2-330798ba/"><i
+          class="bi bi-linkedin mx-2"></i>LinkedIn</a>
+      <a class="contact-links" href="https://blog.tabbo.it"><i class="bi bi-wordpress mx-2"></i>Blog</a>
+      <a class="contact-links" href="mailto:cv@tabbo.it"><i class="bi bi-envelope-at mx-2"></i>cv@tabbo.it</a>
+      <hr>
+      <h2 class="fs-4 my-2">Tech skills</h2>
+      <ul>
+        <li>Got my first PC at age 4</li>
+        <li>Started programming at age 8</li>
+        <li>Linux user since 2006</li>
+        <li>My Debian home server(s) has been on since 2010</li>
+        <li>Treats infra as <a href="https://www.hava.io/blog/cattle-vs-pets-devops-explained">cattle</a></li>
+        <li>Prefers to spend 8 hours automating something, than 10 minutes doing it</li>
+        <li>Built a Python network automation library with hundreds of downloads from pypi</li>
+        <li>Learning Kubernetes, already moved some production apps on it</li>
+        <li>10 years Cisco Networking experience</li>
+      </ul>
+      <hr>
+      <h2 class="fs-4 my-2">Hobbies</h2>
+      <ul>
+        <li>Woodworking</li>
+        <li><a href="https://www.youtube.com/watch?v=IWhAjl318Aw">3D modeling in Blender</a></li>
+        <li>Writing for my <a href="https://blog.tabbo.it">blog</a></li>
+        <li>Home automation</li>
+      </ul>
+      <hr>
+
+    </div>
+
+    <div class="col-12 col-md-8 col-xxl-5 d-flex p-2 p-md-5 flex-fill flex-column main-section">
+      <div class="container">
+        <div class="d-flex flex-column section border border-light-subtle rounded my-2">
+          <h1 class="py-4 fs-2 text-center">Netwalk</h1>
+
+          <div class="block">
+            <p>Available on <a class="contact-links" href="https://github.com/icovada/netwalk"><i class="bi bi-github mx-0"></i>GitHub</a></p>
+
+            <p>Python library based on Napalm to discover Cisco network fabrics through CDP and LLDP, parse current
+              configurations and map host positions by calculating a distributed mac address table.</p>
+            <p>Used in conjunction with NetBox and Jenkins, can be used to manage classical networks with API calls.</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column section border border-light-subtle rounded my-2">
+          <h1 class="py-4 fs-2 text-center">Meta-Monitor</h1>
+
+          <div class="block">
+
+            <p>Django application to receive and keep track of alerts from different monitoring systems @ NTT NOC</p>
+            <p>I have taken over the applicazion following the original dev resignation.</p>
+            <p>I have since completely rewritten both frontend and backend with an eye to performance and user experience, optimising queries to speed up API respose times.</p>
+            <ul>
+              <li>Backend code was optimised and I've added support for proper RBAC with LDAP-mapped groups</li>
+              <li>Frontend was completely rewritten and now communicates through APIs and Websockets to propagate updates immedietely across clients and reduce DB load</li>
+              <li>Historical data is pushed to InfluxDB for analytics</li>
+              <li>Grafana dashboard on a wall monitor for immediate visibility of alerting states</li>
+              <li>Migrated from systemd service to docker and now to Kubernetes</li>
+              <li>Currently being split into microservicews</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column section border border-light-subtle rounded my-2">
+          <h1 class="py-4 fs-2 text-center text">fACIle<p class="fs-6 text-center text-muted">(<i>easy</i> in Italian)</p></h1>
+          
+
+          <div class="block">
+
+            <p>Django application to receive and keep track of alerts from different monitoring systems @ NTT NOC</p>
+            <p>I have taken over the applicazion following the original dev resignation.</p>
+            <p>I have since completely rewritten both frontend and backend with an eye to performance and user experience, optimising queries to speed up API respose times.</p>
+            <ul>
+              <li>Backend code was optimised and I've added support for proper RBAC with LDAP-mapped groups</li>
+              <li>Frontend was completely rewritten and now communicates through APIs and Websockets to propagate updates immedietely across clients and reduce DB load</li>
+              <li>Historical data is pushed to InfluxDB for analytics</li>
+              <li>Grafana dashboard on a wall monitor for immediate visibility of alerting states</li>
+              <li>Migrated from systemd service to docker and now to Kubernetes</li>
+              <li>Currently being split into microservicews</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column section border border-light-subtle rounded my-2">
+          <h1 class="py-4 fs-2 text-center">Painless IBLE</h1>
+
+          <div class="block">
+            <p>Available on <a class="contact-links" href="https://github.com/icovada/netwalk"><i class="bi bi-github mx-0"></i>GitHub</a></p>
+
+            <p>Reverse-engineered the savefile of a painfully bad application to program LED panels</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="sidebars.js"></script>
+</body>
+
+</html>

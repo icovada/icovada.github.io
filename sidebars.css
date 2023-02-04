@@ -20,8 +20,12 @@ a {
 }
 
 .main-section {
-  background-color: #191919 !important;
   overflow-y: scroll;
+  background-color: #111111;
+}
+
+.main-section .section{
+  background-color: #212529 !important;
 }
 
 .sidebar {
@@ -41,7 +45,7 @@ a {
   padding-left: 10%;
 }
 
-.timeline .block {
+.block {
   padding-left: 5%;
   padding-right: 10%;
 }

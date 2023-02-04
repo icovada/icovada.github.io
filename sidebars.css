@@ -3,10 +3,6 @@ body {
   min-height: -webkit-fill-available;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 main {
   height: 100vh;
   height: -webkit-fill-available;
@@ -52,8 +48,4 @@ a {
 
 .timeline .block .date {
   padding-bottom: 0.5em;
-}
-
-li {
-  padding-bottom: 1em;
 }

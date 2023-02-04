@@ -128,6 +128,23 @@
           </div>
         </div>
 
+        <div id="stageit" class="d-flex flex-column section border border-light-subtle rounded my-2">
+          <h1 class="py-4 fs-2 text-center text">StageIT</h1>
+          <div class="block">
+            <p>Internal project @ NTT to automatically generate configurations based on templates and upload them to new, unstaged switches.</p>
+            <p>Django would handle the frontend, a separate plugin which communicated through APIs and Celery queues would connect via serial port to a switch and manage all phases of staging</p>
+            <ul>
+              <li>Serial number retrieval</li>
+              <li>Firmware upgrade</li>
+              <li>Reboot</li>
+              <li>Uploading configuration</li>
+              <li>Saving config</li>
+            </ul>
+            <p>A final report would be produced with all available logs and collected information</p>
+            <p>Despite being almost ready, it was killed by the advent of Cisco 9000 series with one-command IOS-XE upgrade (THANK YOU CISCO!)</p>
+          </div>
+        </div>
+
         <div id="painlessible" class="d-flex flex-column section border border-light-subtle rounded my-2">
           <h1 class="py-4 fs-2 text-center">Painless IBLE</h1>
           <div class="block">

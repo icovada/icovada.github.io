@@ -50,6 +50,12 @@ a {
   padding-right: 10%;
 }
 
+.jobrole {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+}
+
 .timeline .block .date {
   padding-bottom: 0.5em;
 }
